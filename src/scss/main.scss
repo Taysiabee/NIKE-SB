@@ -1,0 +1,53 @@
+
+@import 'reset';
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+.first{
+	.main{
+		width: 100%; 
+		display: block;
+		@media screen and (min-width: 1024px){
+			display: none;
+		}
+	}
+
+    .main-desk{
+		display: none;
+		@media screen and (min-width: 1024px){
+			display: block;
+			width: 100%;
+			filter: gray;
+  			filter: grayscale(1); 
+			transition: all .8s ease-in-out; 
+		}
+		
+	}
+
+	@media screen and (min-width: 1024px){
+			.main-desk:hover{
+				filter: none;
+				filter: grayscale(0);
+				transform: scale(1.01);
+			}
+		}
+
+	.main-water-mobile{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		@media screen and (min-width: 1024px){
+			display: none;
+		}
+	}
+
+}
+
+
+	
