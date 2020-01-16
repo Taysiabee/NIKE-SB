@@ -1,0 +1,83 @@
+body{
+	background-color: white;
+}
+
+.top{
+	background-color: white;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+
+	.lines{
+		width: 30px;
+		height: 2px;
+		margin: 10px 0;
+		background-color: black;
+			@media screen and (min-width: 768px){
+			display: none;
+			}
+	}
+
+	.sb-logo{
+		width: 26%;
+		position: relative;
+		left: 160px;
+		bottom: 25px;
+	}
+
+
+	.desk-nav{
+		display: none;
+			@media screen and (min-width: 768px){
+			display: flex;
+			flex-direcion: row;
+		}
+
+		.desk-nav ul  li a{
+			 @media screen and (min-width: 768px){
+			color: black;
+			text-decoration: none;
+			}
+		}	
+	}
+} //end top
+
+
+// ---------------------------------------------------------
+
+.hero{
+	.gif{
+	width: 100%;
+	}
+}
+
+// -------------------------------------------------------------------
+
+.wrapper{
+	padding: 10px;
+
+	.build{
+	background-color: grey;
+	height: 400px;
+	
+	
+
+		h2{
+			color: black;
+			text-align: center;
+			font-weight: bold;
+			font-size: 2em;
+			padding: 20px;
+		}
+	}
+
+	.shop{
+		background-color: black;
+		height: 400px;
+	
+	} 
+}
+
+
+
