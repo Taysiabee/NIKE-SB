@@ -1,55 +1,100 @@
 
 @import 'reset';
 @import 'home';
-
-
+@import 'build';
+@import 'gallery';
+@import 'cart';
+@import 'checkout';
 
 
 * {
 	box-sizing: border-box;
 }
 
+
 .first{
 	.main{
 		width: 100%; 
 		display: block;
-		@media screen and (min-width: 1024px){
-			display: none;
-		}
-	}
-
-    .main-desk{
-		display: none;
-		@media screen and (min-width: 1024px){
-			display: block;
-			width: 100%;
-			filter: gray;
-  			filter: grayscale(1); 
-			transition: all .8s ease-in-out; 
-		}
-		
-	}
-
-	@media screen and (min-width: 1024px){
-			.main-desk:hover{
-				filter: none;
-				filter: grayscale(0);
-				transform: scale(1.01);
+			@media screen and (min-width: 1024px){
+				display: none;
 			}
-		}
-
-	.main-water-mobile{
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 100%;
-		@media screen and (min-width: 1024px){
-			display: none;
-		}
 	}
-}
+
+	.pulse-grizzly{
+		position: absolute;
+		top: 32.5%;
+		left: 14.8%;
+		width: 11.2%;
+			@media screen and (min-width: 1024px){
+				display: none;
+			}
+	}
+
+	.sb-logo{
+		display: none;
+			@media screen and (min-width: 1024px){
+				display: block;
+				width: 10%;
+
+			}
+	}
+
+	button a{
+		position: absolute;
+		bottom: 15%;
+		left: 45%;
+	}
+
+}   //end first
 
 
 
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// @media screen and (min-width: 1024px){
+	// 		.main-desk:hover{
+	// 			filter: none;
+	// 			filter: grayscale(0);
+	// 			transform: scale(1.01);
+	// 		}
+	// 	}
+
+
+
+
+
+ //    .main-desk{
+	// 	display: none;
+	// 	@media screen and (min-width: 1024px){
+	// 		display: block;
+	// 		width: 100%;
+	// 		filter: gray;
+ //  			filter: grayscale(1); 
+	// 		transition: all .8s ease-in-out; 
+	// 	}
+		
+	// }

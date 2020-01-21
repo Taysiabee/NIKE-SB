@@ -1,0 +1,30 @@
+.cart{
+	// display: flex;
+	// flex-direction: column;
+
+}
+
+.final{
+		background-color: black;
+		color: black;
+		width: 50%;
+		position: absolute;
+		left: 25%;
+	}
+
+button a{
+			background-color: #4EB6BF;
+			border: none;
+			color: white;
+			padding: 12px;
+			width: 25%;
+			text-align: center;
+			text-decoration: none;
+			font-size: 18px;
+			text-transform: uppercase;
+			border-radius: 10px;
+			cursor: pointer;
+			position: absolute;
+			bottom: 20%;
+			left:  65%;
+		}
