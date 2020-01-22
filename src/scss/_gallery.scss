@@ -11,21 +11,22 @@
 		width: 50%;
 		position: absolute;
 		left: 25%;
-		top: 20%;
+		top: 25%;
 
 		p{
 				@media screen and (min-width: 1024px){
 				height: 400px;
+
 			}
 		}
 	}
 
-// button a{
-// 			background-color: #4EB6BF;
+// .add-to button a{
+// 			background-color: red;
 // 			border: none;
 // 			color: white;
 // 			padding: 12px;
-// 			width: 25%;
+// 			width: 40%;
 // 			text-align: center;
 // 			text-decoration: none;
 // 			font-size: 18px;
@@ -33,8 +34,8 @@
 // 			border-radius: 10px;
 // 			cursor: pointer;
 // 			position: absolute;
-// 			bottom: 30%;
-// 			left:  65%;
+// 			bottom: 10%;
+// 			left:  30%;
 // 			@media screen and (min-width: 768px){
 // 					position: absolute;
 // 					bottom: -70%;
@@ -43,6 +44,3 @@
 // 				}
 // }
 
-// footer{
-// 	background-color: red;
-// }

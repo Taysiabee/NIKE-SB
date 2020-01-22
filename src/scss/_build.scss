@@ -92,7 +92,7 @@ button a{
 			border: none;
 			color: white;
 			padding: 12px;
-			width: 25%;
+			width: 40%;
 			text-align: center;
 			text-decoration: none;
 			font-size: 18px;
@@ -101,10 +101,13 @@ button a{
 			cursor: pointer;
 			position: absolute;
 			bottom: 30%;
-			left:  65%;
+			left:  45%;
 				@media screen and (min-width: 768px){
-					// position: absolute;
+					position: absolute;
 					bottom: 0%;
+					width: 10%;
+					border-radius: 3px;
+					left: 66%;
 				}
 		}
 

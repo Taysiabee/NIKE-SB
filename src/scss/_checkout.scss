@@ -5,66 +5,121 @@ body{
 .wrapper{
 	padding: 40px;
 
-.main-checkout{
-	.sb-logo{
-		width: 20%;
-		position: absolute;
-		left: 40%;
-		top: 5%;
-	}
-
-	h1{
-		position: absolute;
-		top: 20%;
-		left: 25%;
-		font-size: 1em;
-
-		span{
-			font-weight: bold;
+	.main-checkout{
+		.sb-logo{
+			width: 20%;
+			position: absolute;
+			left: 40%;
+			top: 5%;
+			@media screen and (min-width: 768px){
+				width: 15%;
+				position: absolute;
+				left: 40%;
+				top: 2%;
+			}
 		}
-	}
 
-	h2{
-		position: absolute;
-		top: 25%;
-		left: 37%;
-		font-weight: bold;
-		font-size: 1.5em;
-	}
-}
+		h1{
+			position: absolute;
+			top: 20%;
+			left: 25%;
+			font-size: 1em;
+			color: #707070;
+			@media screen and (min-width: 768px){
+				left: 10%;
+				font-size: 1.5em;
+				color: #707070;
+				top: 10%;
+				left: 5%;
+			}
 
+			span{
+				font-weight: bold;
+			}
+		}
+
+		h2{
+			position: absolute;
+			top: 25%;
+			left: 37%;
+			font-weight: bold;
+			font-size: 1.5em;
+			@media screen and (min-width: 768px){
+				color: #707070;
+				left: 45%;
+				font-size: 2em;
+			}
+		}
+	} //main checkout
+
+
+.checkout-info{
+	display: flex;
+	flex-direction: column;
+		@media screen and (min-width: 768px){
+			display: flex;
+			flex-direction: row;
+			position: relative;
+		}
 	.skateboard{
 		background-color: black;
 		margin-top: 50%;
-	}
-}
+			@media screen and (min-width: 768px){
+			    margin-top: 10%;
+   			 	height: 300px;
+    			width: 20%;
+    			margin-top: 15%;
+    			margin-left: 42%;
+			}
 
-h3{
-	margin-top: 10%;
-	margin-left: 15%;
-	color: #4FB6BF;
-	font-weight: bold;
-	font-size: 1.5em;
-}
+		h3{
+			margin-top: 10%;
+			margin-left: 15%;
+			color: #4FB6BF;
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+	}   //skateboard
 
-.money-info{
-	margin-top: 10%;
-	color: #4FB6BF;
-	h4{
+	.money-info{
+		margin-top: 10%;
+		color: #4FB6BF;
+		@media screen and (min-width: 768px){
+			position: absolute;
+			right: 15%;
+			top: 25%;
+			line-height: 25px;
+		}
+			h3{
+				@media screen and (min-width: 768px){
+					font-size: 1.5em;
+					font-weight: bold;
+					margin-bottom: 5px;
+				}
 
-	}
-	span{
-		float: right;
-	}
-}
+			}
+			span{
+				float: right;
+			}
+		.line{
+			background-color: #4FB6BF;
+			height: 2px;
+			margin-bottom: 3%;
+			margin-top: 3%;
+		}
+	}   //money-info
 
-.line{
-	background-color: #4FB6BF;
-	height: 2px;
-	margin-bottom: 3%;
-	margin-top: 3%;
-}
+} //checkout-info
 
+
+
+
+
+
+
+
+
+} //wrapper
 
 // button {
 // 			background-color: #4EB6BF;
