@@ -5,16 +5,46 @@ body{
 .wrapper{
 	padding: 40px;
 
+.main-checkout{
+	.sb-logo{
+		width: 20%;
+		position: absolute;
+		left: 40%;
+		top: 5%;
+	}
+
+	h1{
+		position: absolute;
+		top: 20%;
+		left: 25%;
+		font-size: 1em;
+
+		span{
+			font-weight: bold;
+		}
+	}
+
+	h2{
+		position: absolute;
+		top: 25%;
+		left: 37%;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+}
 
 	.skateboard{
 		background-color: black;
+		margin-top: 50%;
 	}
 }
 
 h3{
 	margin-top: 10%;
-	margin-left: 30%;
+	margin-left: 15%;
 	color: #4FB6BF;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 .money-info{

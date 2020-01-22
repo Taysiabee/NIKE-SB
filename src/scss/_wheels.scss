@@ -1,0 +1,118 @@
+.main{
+	
+	.sb-logo{
+		width: 20%;
+		position: absolute;
+		left: 40%;
+		top: 2%;
+	}
+
+	h1{
+		display: block;
+		color: #707070;
+		position: absolute;
+		left: 5%;
+		top: 10%;
+
+		span{
+			font-weight: bold;
+		}
+	}
+
+	h2{
+		position: absolute;
+		top: 15%;
+		left: 32%;
+		font-weight: bold;
+		font-size: 1.5em;
+	}	
+}
+
+.choose{
+	display: flex;
+	flex-direction: row;
+	margin-top: 30%;
+	@media screen and (min-width: 1024px){
+		margin-left: 20%;
+	}
+	
+	.pick{
+		background-color: grey;
+		color: grey;
+		opacity: 0.4;
+		width: 40%;
+		@media screen and (min-width: 1024px){
+			height: 270px;
+			width: 20%;
+			margin-top: 5%;
+		}
+		
+		.arrow-left{
+			position: absolute;
+			left: 3%;
+			top: 40%;
+			width: 25px;
+			height: 25px;
+			border-top: 2px solid #000;
+			border-left: 2px solid #000;
+			@media screen and (min-width: 1024px){
+				top: 120%;
+			}
+
+		} 
+		
+		.arrow-left{
+			transform: rotate(-45deg);
+		}
+	} //pick
+
+	
+	.pick-two{
+		background-color: black;
+		color: black;
+		width: 90%;
+		margin-right: 2%;
+		margin-left: 2%;
+		@media screen and (min-width: 1024px){
+				height: 400px;
+				width: 33%
+		}
+	}
+
+	.pick-three{
+		background-color: grey;
+		color: grey;
+		opacity: 0.4;
+		width: 40%;
+		@media screen and (min-width: 1024px){
+				height: 270px;
+				width: 20%;
+				margin-top: 5%;
+		}
+
+		.arrow-right{
+			position: absolute;
+			right: 3%;
+			top: 40%;
+			width: 25px;
+			height: 25px;
+			border-top: 2px solid #000;
+			border-left: 2px solid #000;
+				@media screen and (min-width: 1024px){
+					top: 120%;
+				}
+		}
+		
+		.arrow-right{
+		 	transform: rotate(135deg);
+		}
+
+	} //pick three
+
+
+} //end choose
+
+footer{
+	background-color: black;
+	width: 100%;
+}

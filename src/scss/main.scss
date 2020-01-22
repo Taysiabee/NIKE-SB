@@ -5,6 +5,7 @@
 @import 'gallery';
 @import 'cart';
 @import 'checkout';
+@import 'wheels';
 
 
 * {
@@ -36,6 +37,15 @@
 			@media screen and (min-width: 1024px){
 				display: block;
 				width: 10%;
+
+			}
+	}
+
+	.nike-lite{
+		display: none;
+		@media screen and (min-width: 1024px){
+				display: block;
+				width: 100%;
 
 			}
 	}
