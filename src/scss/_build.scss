@@ -4,9 +4,12 @@
 
 
 .choose{
-	display: flex;
-	flex-direction: row;
-	margin-top: 40%;
+	// display: flex;
+	// flex-direction: row;
+	// margin-top: 40%;
+	position: relative;
+	//fixed px height?
+	///% width
 	@media screen and (min-width: 1024px){
 		margin-left: 20%;
 	}
