@@ -10,107 +10,159 @@
 
 * {
 	box-sizing: border-box;
+	font-family: sans-serif !important;
 }
 
-.sb-logo{
-	width: 15%;
-	position: absolute;
-	left: 40%;
-	top: 2%;
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
 }
+ 	
 
-.first{
-	.main{
-		width: 100%; 
-		display: block;
-			@media screen and (min-width: 1024px){
-				display: none;
-			}
-	}
+.top{
+	display: flex;
+	margin-top: 2%;
+	justify-content: space-around;
+	margin-right: 3%;
 
-	.pulse-grizzly{
-		position: absolute;
-		top: 32.5%;
-		left: 14.8%;
-		width: 11.2%;
-			@media screen and (min-width: 1024px){
-				display: none;
+
+	ul {
+		display: none;
+			@media screen and (min-width: 728px){
+				display: flex;
+				flex-direction: row;
+				margin-left: 7%;
+				color: #707070;
+				font-size: 1.5em;
 			}
+
+		li{
+			@media screen and (min-width: 728px){
+				margin-right: 15%;
+			}
+		}
 	}
 
 	.sb-logo{
-		display: none;
-			@media screen and (min-width: 1024px){
-				display: block;
-				width: 10%;
-
-			}
+		width: 25%;
+		margin: auto;
+		display: block;	
 	}
 
-	.nike-lite{
-		display: none;
+	.ham{
+		width: 15%;
+		@media screen and (min-width: 728px){
+			display: none;
+		}
+	}
+
+	.cart-icon{
+		width: 7%;
+		height: 7%;
+
+	}
+
+	.search-icon{
+		width: 4%;
+		height: 4%;
+		margin-left: 2%;
+	}
+
+
+
+}
+
+.index{
+	background-color: #2B2B2B;
+
+		.entry-button{
+		    background-color: #4EB6BF;
+		    width: 50%;
+		    font-size: 18px;
+		    border-radius: 32px;
+		    position: absolute;		    
+		    top: 40%;
+		    left: 25%;
+		    height: 9%;
+
+		    .sb-entry{
+		    	width: 40%;
+			    position: absolute;
+			    left: 33%;
+			    bottom: 5%;;
+		    }
+		}
+}
+
+//---------------------------------------------------
+
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+// -----------on all pages----------------------
+.main{
+	
+	.breadcrumbs{
+		display: block;
+		color: #707070;
+		align-self: flex-start; 
+		margin-top: 10%;
+
 		@media screen and (min-width: 1024px){
-				display: block;
-				width: 100%;
+			font-size: 1.5em;
+		}
 
-			}
+		span{
+			font-weight: bold;
+		}
+
+		a{
+			color: #707070;
+			text-decoration: none;
+		}
 	}
 
-	button a{
-		position: absolute;
-		bottom: 15%;
-		left: 45%;
+	h2{
+		font-size: 1.5em;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		color: #707070;
+		text-transform: uppercase;
+	}	
+}
+
+//--------end main --------------------
+
+
+//-----on  every page----
+
+
+footer{
+	background-color: #2B2B2B;
+	color: white;
+	padding: 20px;
+	margin-top: 60px;
+	text-transform: uppercase;
+
+	p{
+		@media screen and (min-width: 728px){
+			margin-left: 39%;
+		}
 	}
 
-}   //end first
+	.sm-icons{
+		width: 30%;
+		margin-left: 35%;
+		@media screen and (min-width: 728px){
+			width: 25%;
+		}
+	}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// @media screen and (min-width: 1024px){
-	// 		.main-desk:hover{
-	// 			filter: none;
-	// 			filter: grayscale(0);
-	// 			transform: scale(1.01);
-	// 		}
-	// 	}
-
-
-
-
-
- //    .main-desk{
-	// 	display: none;
-	// 	@media screen and (min-width: 1024px){
-	// 		display: block;
-	// 		width: 100%;
-	// 		filter: gray;
- //  			filter: grayscale(1); 
-	// 		transition: all .8s ease-in-out; 
-	// 	}
-		
-	// }

@@ -2,110 +2,128 @@ body{
 	background-color: white;
 }
 
-.wrapper{
-	padding: 40px;
 
 	.main-checkout{
 		.sb-logo{
-			width: 20%;
+			width: 30%;
 			position: absolute;
 			left: 40%;
 			top: 5%;
-			@media screen and (min-width: 768px){
-				width: 15%;
-				position: absolute;
-				left: 40%;
-				top: 2%;
-			}
+			margin-right: 20%;
 		}
 
 		h1{
-			position: absolute;
-			top: 20%;
-			left: 25%;
-			font-size: 1em;
 			color: #707070;
-			@media screen and (min-width: 768px){
-				left: 10%;
-				font-size: 1.5em;
-				color: #707070;
-				top: 10%;
-				left: 5%;
+			font-size: 1.5em;
+			text-transform: uppercase;
+			margin-top: 10%;
+			text-align: center;
+			@media screen and (min-width: 728px){
+				margin-top: 5%;
+			}
+		}
+
+		.breadcrumbs{
+			display: block;
+			color: #707070;
+			align-self: flex-start; 
+			margin-top: 25%;
+			@media screen and (min-width: 728px){
+				margin-top: 3%;
+			}
+
+			@media screen and (min-width: 728px){
+				font-size: 1em;
 			}
 
 			span{
 				font-weight: bold;
 			}
-		}
 
-		h2{
-			position: absolute;
-			top: 25%;
-			left: 37%;
-			font-weight: bold;
-			font-size: 1.5em;
-			@media screen and (min-width: 768px){
+			a{
 				color: #707070;
-				left: 45%;
-				font-size: 2em;
+				text-decoration: none;
 			}
 		}
+
+		
 	} //main checkout
 
 
 .checkout-info{
 	display: flex;
 	flex-direction: column;
-		@media screen and (min-width: 768px){
-			display: flex;
-			flex-direction: row;
-			position: relative;
-		}
+	@media screen and (min-width: 728px){
+		display: flex;
+		flex-direction: row;
+	}
 	.skateboard{
-		background-color: black;
-		margin-top: 50%;
-			@media screen and (min-width: 768px){
-			    margin-top: 10%;
-   			 	height: 300px;
-    			width: 20%;
-    			margin-top: 15%;
-    			margin-left: 42%;
+	
+		.brown-w-brown{
+			width: 80%;
+			@media screen and (min-width: 728px){
+				width: 60%;
+				margin-left: 38%;
+				margin-top: 10%;
 			}
-
-		h3{
-			margin-top: 10%;
-			margin-left: 15%;
-			color: #4FB6BF;
-			font-weight: bold;
-			font-size: 1.5em;
 		}
-	}   //skateboard
+	} //skateboard
 
 	.money-info{
 		margin-top: 10%;
 		color: #4FB6BF;
-		@media screen and (min-width: 768px){
-			position: absolute;
-			right: 15%;
-			top: 25%;
-			line-height: 25px;
+		@media screen and (min-width: 728px){
+			margin-top: 0%;
+			margin-right: 10%;
 		}
 			h3{
-				@media screen and (min-width: 768px){
-					font-size: 1.5em;
-					font-weight: bold;
-					margin-bottom: 5px;
-				}
+			font-weight: bold;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 5%;
+			font-size: 1.5em;
+			@media screen and (min-width: 728px){
+				font-size: .8em;
+			}
+
 
 			}
 			span{
 				float: right;
+				@media screen and (min-width: 728px){
+					margin-top: 2%;
+				}
+
 			}
+
+			h4{
+				font-size: 1.2em;
+				@media screen and (min-width: 728px){
+					font-size: 1em;
+				}
+			}
+		
 		.line{
 			background-color: #4FB6BF;
 			height: 2px;
 			margin-bottom: 3%;
 			margin-top: 3%;
+		}
+
+		.btn{
+			padding: 15px;
+		    border-radius: 10px;
+		    color: white;
+		    background-color: #4EB6BF;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    text-align: center;
+		    text-decoration: none;
+		    margin-left: 40%;
+		    margin-top: 10%;
+		    @media screen and (min-width: 728px){
+		    	margin-top: 10%;
+		    }
 		}
 	}   //money-info
 
@@ -119,7 +137,6 @@ body{
 
 
 
-} //wrapper
 
 // button {
 // 			background-color: #4EB6BF;

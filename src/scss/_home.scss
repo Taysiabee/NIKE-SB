@@ -2,102 +2,144 @@ body{
 	background-color: white;
 }
 
-.top{
-	position: relative;
-	margin-top: 2%;
-	.sb-logo{
-		width: 20%;
-		position: absolute;
-		left: 40%;
-		top: 10%;
-		display: block;
-			@media screen and (min-width: 768px){
-				width: 12%;
-				position: absolute;
-				top: 2%;
-			}
-	}
-
-	h1{
-		display: none;
-			@media screen and (min-width: 768px){
-				color: #707070;
-				position: absolute;
-				right: 20%;
-				display: block;
-
-			}
-	}
-
-	.cart-icon{
-		display: none;
-			@media screen and (min-width: 768px){
-				width: 1.5%;
-				position: absolute;
-				right: 17.5%;
-				display: block;
-			}
-	}
-
-	input{
-		display: none;
-		@media screen and (min-width: 768px){
-			position: absolute;
-			right: 4%;
-			display: block;
-		}
-		
-	}
-	
-} //end top
-
 
 // ---------------------------------------------------------
 
 .hero{
-	.skate-hero{
-		width: 100%;
-		margin-top: 20%;
-			@media screen and (min-width: 768px){
-				width: 100%;
-				margin-top: 7%;
-			}
-	
-	}
-}
+	background: url(../img/greyscale-nike.jpg) no-repeat;
+	height: 250px;
+	background-size: cover;
+	margin-top: 10%;
+} 	
 
 // -------------------------------------------------------------------
 
-.parent-section{
-	margin-top: 10%;
-		@media screen and (min-width: 768px){
-			display: flex;
-			flex-direction: row;
+.customize{
+
+	.home-skateboard{
+		width: 80%;
+		margin-top: 10%;
+		margin-left: 15%;
+		@media screen and (min-width: 728px){
+			width: 95%;
+			margin-top: 0%;
+			margin-left: 24%;
 		}
+	
+	}
+
+	h2{
+		font-size: 2em;
+		text-transform: uppercase;
+		margin-top: 5%;
+		text-align: center;
+		@media screen and (min-width: 728px){
+			font-size: 1.2em;
+			margin-left: 35%;
+			margin: auto;
+		}
+	}
+
+	button{
+			background-color: #4EB6BF;
+			border: none;
+			color: white;
+			padding: 5px;
+			width: 25%;
+			text-align: center;
+			text-decoration: none;
+			font-size: 20px;
+			text-transform: uppercase;
+			border-radius: 8px;
+			cursor: pointer;
+			margin-top: 3%;
+			margin-bottom: 10%;
+			margin-left: 40%;
+			@media screen and (min-width: 728px){
+				width: 50%;
+				margin-right: 10%;
+			}
+	}
+
+} //end customize
 		
 
-	.arrivals{
-		background-color: #2B2B2B;
-		height: 400px;
-		position: relative;
-		margin-bottom: 3%;
-		@media screen and (min-width: 1224px){
-			width: 33%;
-			border-radius: 20%;
-			margin-left: 1%;
-		}		
+// -------------------------------------------------------------------
+.boxes{
+	@media screen and (min-width: 728px){
+		display: flex;
+		flex-direction: row-reverse;
+		margin-top: 10%;
+	}
 	
+	
+	.new-arrivals{
+ 	
+ 	.arrivals-img{
+ 		width: 100%;
+ 		@media screen and (min-width: 728px){
+		border-radius: 20px;
+		width: 109%;
+			}
+ 		}	
+
+	h2{
+		font-size: 2.5em;
+		text-transform: uppercase;
+		margin-top: -26%;
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		@media screen and (min-width: 728px){
+			font-size: 1.5em;
+			margin-left: 15%;
+		}
+	}
+	
+	button{
+		background-color: #4EB6BF;
+		border: none;
+		color: white;
+		padding: 5px;
+		width: 25%;
+		text-align: center;
+		text-decoration: none;
+		font-size: 20px;
+		text-transform: uppercase;
+		border-radius: 8px;
+		cursor: pointer;
+		margin-top: 3%;
+		margin-bottom: 10%;
+		margin-left: 40%;
+		@media screen and (min-width: 728px){
+				width: 50%;
+			    margin-left: 30%;
+			    margin-top: 1%;
+		}
+	}
+
+} //end new arrival
+// -------------------------------------------------------------------
+
+	.trend{	
+		
+		.man-home-img{
+			width: 100%;
+			@media screen and (min-width: 728px){
+				border-radius: 20px;
+				// margin-right: 5%;
+				width: 90%;
+			}
+		}
+
 		h2{
-			color: white;
+			font-size: 2.5em;
+			text-transform: uppercase;
+			margin-top: -26%;
 			text-align: center;
-			font-weight: bold;
-			font-size: 2em;
-			padding: 20px;
-			position: absolute;
-			bottom: 10%;
-			left: 29%;
-			@media screen and (min-width: 768px){
-				left: 25%;
+			color: black;
+			@media screen and (min-width: 728px){
+				font-size: 1.5em;
 			}
 		}
 
@@ -113,135 +155,120 @@ body{
 			text-transform: uppercase;
 			border-radius: 8px;
 			cursor: pointer;
-			position: absolute;
-			bottom: 4%;
-			left:  40%;
-			@media screen and (min-width: 768px){
-				left: 35%;
+			margin-top: 3%;
+			margin-bottom: 10%;
+			margin-left: 40%;
+			@media screen and (min-width: 728px){
+				width: 50%;
+			    margin-left: 28%;
 			}
+    
 		}
-	} //arrival
-
-
-
-	 .trends{
-		height: 400px;
-		position: relative;
-		margin-bottom: 3%;
-		@media screen and (min-width: 768px){
-			width: 33%;
-			border-radius: 20%;
-			margin-left: 5%;
-		}
-
-		.skate-man{
-			width: 100%;
-			@media screen and (min-width: 768px){
-				border-radius: 20%;
-				margin-left: -10%;
-			}
-		}
-
-		h2{
-			color: black;
-			text-align: center;
-			font-weight: bold;
-			font-size: 2em;
-			padding: 20px;
-			position: absolute;
-			bottom: 5%;
-			left: 29%;
-			@media screen and (min-width: 768px){
-				left: 15%;
-			}
-		}
-
-		button a{
-			background-color: #4EB6BF;
-			border: none;
-			color: white;
-			padding: 5px;
-			width: 25%;
-			text-align: center;
-			text-decoration: none;
-			font-size: 20px;
-			text-transform: uppercase;
-			border-radius: 8px;
-			cursor: pointer;
-			position: absolute;
-			bottom: 2%;
-			left:  40%;
-			@media screen and (min-width: 768px){
-				left: 30%;
-			}
-
-		}
-	 }
-
-
-	 .customize{
-		position: relative;
-		@media screen and (min-width: 768px){
-			width: 33%;
-			border-radius: 20%;
-		}
-
-
-		h2{
-			color: #E062A6;
-			text-align: center;
-			font-weight: bold;
-			font-size: 2em;
-			padding: 20px;
-			position: absolute;
-			bottom: 5%;
-			left: 20%;
-			@media screen and (min-width: 768px){
-				left: 15%;
-				bottom: 20%;
-			}
-		}
-
-		.three-pink{
-			width: 100%;
-			height: 400px;
-			@media screen and (min-width: 768px){
-				border-radius: 20%;
-				margin-left: 10%;
-				background-color:  #2B2B2B; 
-				margin-left: -5%;
-			}
-		}
-
-		button a{
-			background-color: #4EB6BF;
-			border: none;
-			color: white;
-			padding: 5px;
-			width: 25%;
-			text-align: center;
-			text-decoration: none;
-			font-size: 20px;
-			text-transform: uppercase;
-			border-radius: 8px;
-			cursor: pointer;
-			position: absolute;
-			bottom: 0%;
-			left:  40%;
-			@media screen and (min-width: 768px){
-				bottom: 15%;
-				left: 35%;
-			}
-		}
-	 }
+	} //end trend
 
 }
+ 
+ 
+		// h2{
+		// 	color: black;
+		// 	text-align: center;
+		// 	font-weight: bold;
+		// 	font-size: 2em;
+		// 	padding: 20px;
+		// 	position: absolute;
+		// 	bottom: 5%;
+		// 	left: 29%;
+		// 	@media screen and (min-width: 768px){
+		// 		left: 15%;
+		// 	}
+		// }
+
+		// button a{
+		// 	background-color: #4EB6BF;
+		// 	border: none;
+		// 	color: white;
+		// 	padding: 5px;
+		// 	width: 25%;
+		// 	text-align: center;
+		// 	text-decoration: none;
+		// 	font-size: 20px;
+		// 	text-transform: uppercase;
+		// 	border-radius: 8px;
+		// 	cursor: pointer;
+		// 	position: absolute;
+		// 	bottom: 2%;
+		// 	left:  40%;
+		// 	@media screen and (min-width: 768px){
+		// 		left: 30%;
+		// 	}
+
+		// }
+	 // }
 
 
-footer{
-	background-color: black;
-	color: white;
-	padding: 20px;
-}
+	 // .customize{
+		// position: relative;
+		// @media screen and (min-width: 768px){
+		// 	width: 33%;
+		// 	border-radius: 20%;
+		// }
+
+
+		// h2{
+		// 	color: #E062A6;
+		// 	text-align: center;
+		// 	font-weight: bold;
+		// 	font-size: 2em;
+		// 	padding: 20px;
+		// 	position: absolute;
+		// 	bottom: 5%;
+		// 	left: 20%;
+		// 	@media screen and (min-width: 768px){
+		// 		left: 15%;
+		// 		bottom: 20%;
+		// 	}
+		// }
+
+		// .three-pink{
+		// 	width: 100%;
+		// 	height: 400px;
+		// 	@media screen and (min-width: 768px){
+		// 		border-radius: 20%;
+		// 		margin-left: 10%;
+		// 		background-color:  #2B2B2B; 
+		// 		margin-left: -5%;
+		// 	}
+		// }
+
+		// button a{
+		// 	background-color: #4EB6BF;
+		// 	border: none;
+		// 	color: white;
+		// 	padding: 5px;
+		// 	width: 25%;
+		// 	text-align: center;
+		// 	text-decoration: none;
+		// 	font-size: 20px;
+		// 	text-transform: uppercase;
+		// 	border-radius: 8px;
+		// 	cursor: pointer;
+		// 	position: absolute;
+		// 	bottom: 0%;
+		// 	left:  40%;
+		// 	@media screen and (min-width: 768px){
+		// 		bottom: 15%;
+		// 		left: 35%;
+		// 	}
+		// }
+
+
+
+
+
+// footer{
+// 	background-color: black;
+// 	color: white;
+// 	padding: 20px;
+// }
 
 

@@ -1,130 +1,67 @@
-.main{
-	
-	// .sb-logo{
-	// 	width: 15%;
-	// 	position: absolute;
-	// 	left: 40%;
-	// 	top: 2%;
-	// }
-
-	h1{
-		display: block;
-		color: #707070;
-		position: absolute;
-		left: 5%;
-		top: 10%;
-		@media screen and (min-width: 1024px){
-			font-size: 1.5em;
-		}
-
-		span{
-			font-weight: bold;
-		}
-	}
-
-	h2{
-		position: absolute;
-		top: 15%;
-		left: 32%;
-		font-weight: bold;
-		font-size: 1.5em;
-		@media screen and (min-width: 1024px){
-			position: absolute;
-			top: 30%;
-			left: 40%;
-			font-size: 2em;
-			font-weight: bold;
-
-		}
-	}	
-}
-
-.choose{
+.wrapper-wheels{
 	display: flex;
-	flex-direction: row;
-	margin-top: 30%;
-	@media screen and (min-width: 1024px){
-		margin-left: 15%;
-		margin-top: 20%;
+	flex-direction: column;
+	@media screen and (min-width: 728px){
+		flex-direction: row;
 	}
 	
-	.pick{
-		background-color: grey;
-		color: grey;
-		opacity: 0.4;
-		width: 40%;
-		@media screen and (min-width: 1024px){
-			height: 270px;
-			width: 20%;
-			margin-top: 5%;
-		}
-		
-		.arrow-left{
-			position: absolute;
-			left: 3%;
-			top: 40%;
-			width: 25px;
-			height: 25px;
-			border-top: 2px solid #000;
-			border-left: 2px solid #000;
-			@media screen and (min-width: 1024px){
-				top: 65%;
-			}
+	ul{
+		display: flex;
+		margin-top: 10%;
 
-		} 
-		
-		.arrow-left{
-			transform: rotate(-45deg);
-		}
-	} //pick
-
-	
-	.pick-two{
-		background-color: black;
-		color: black;
-		width: 90%;
-		margin-right: 2%;
-		margin-left: 2%;
-		@media screen and (min-width: 1024px){
-				height: 400px;
-				width: 33%
+	}
+	.brown-deck-wheels{
+		width: 120%;
+		@media screen and (min-width: 728px){
+			width: 50%;
+			transform: rotate(345deg);
 		}
 	}
 
-	.pick-three{
-		background-color: grey;
-		color: grey;
-		opacity: 0.4;
-		width: 40%;
-		@media screen and (min-width: 1024px){
-				height: 270px;
-				width: 20%;
-				margin-top: 5%;
-		}
+	.purple-wheel{
+		width: 60%;
+	}
 
-		.arrow-right{
-			position: absolute;
-			right: 3%;
-			top: 40%;
-			width: 25px;
-			height: 25px;
-			border-top: 2px solid #000;
-			border-left: 2px solid #000;
-				@media screen and (min-width: 1024px){
-					top: 65%;
-				}
-		}
-		
-		.arrow-right{
-		 	transform: rotate(135deg);
-		}
+	.pink-wheel{
+		width: 60%;
+	}
 
-	} //pick three
+	.brown-wheel{
+		width: 60%;
+	}
 
-
-} //end choose
-
-footer{
-	background-color: black;
-	width: 100%;
+	.btn {
+	 	padding: 15px;
+	    border-radius: 10px;
+	    color: white;
+	    background-color: #4EB6BF;
+	    font-weight: bold;
+	    font-size: 1em;
+	    text-transform: uppercase;
+	    text-align: center;
+	    text-decoration: none;
+	    width: 30%;
+	    align-self: flex-end;
+	    margin-top: 10%;
+	} 
 }
+
+
+
+
+
+
+
+// .brown-wheels{
+// 	position: relative;
+// 	.brown-deck-wheels{
+// 		width: 120%;
+// 	}
+// }
+
+// .wheels{
+
+// 	.purple-wheel{
+// 		width: 20%;
+// 	}
+// }
