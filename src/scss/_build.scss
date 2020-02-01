@@ -7,46 +7,79 @@
 // 	flex-direction: column;
 // 	padding: 40px;
 
-	.blue-skateboard{
-		position: relative;
-		.blue-deck{
-			position: absolute;
-			width: 40%;
-			top: 32%;
-			right: 75%;
-			@media screen and (min-width: 728px){
-				width: 25%;
-				left: 5%;
-			}
-		}	
-	} 
-
-	.brown-skateboard{
-		position: relative;
-		.brown-deck{
-			position: absolute;
-			width: 60%;
-			right: 25%;
-			@media screen and (min-width: 728px){
-				width: 45%;
-				right: 30%;
-			}
-		}
-}
-
-	.pink-skateboard{
-		position: relative;
-		.pink-deck{
-			position: absolute;
-			width: 40%;
-			left: 80%;
-			@media screen and (min-width: 728px){
-				width: 25%;
-				left: 75%;
-
-			}
-		}
+.all-boards{
+	margin-top: 10%;
+	@media screen and (min-width: 728px){
+		margin-top: -4%;
 	}
+	.blue-skateboard{
+			position: relative;
+			.blue-deck{
+				position: absolute;
+				width: 40%;
+				top: 32%;
+				right: 64%;
+				transition: 1s;
+				@media screen and (min-width: 728px){
+					width: 15%;
+					left: 20%;
+					transition: 1s;
+				}
+			}	
+			
+			// .blue-deck:hover {
+			// 	transform: scale(1.3,1.3);
+			
+			// }
+		} 
+
+		.brown-skateboard{
+			position: relative;
+			.brown-deck{
+				position: absolute;
+				width: 40%;
+				right: 30%;
+				transition: 1s;
+				@media screen and (min-width: 728px){
+					width: 15%;
+					right: 50%;
+					transition: 1s;
+				}
+			}
+
+			// .brown-deck:hover {
+			// 	transform: scale(1.3,1.3);
+			// 	transition: 2s;
+			// }
+	}
+
+		.pink-skateboard{
+			position: relative;
+			.pink-deck{
+				position: absolute;
+				width: 40%;
+				left: 65%;
+				transition: 1s;
+				@media screen and (min-width: 728px){
+					width: 15%;
+					left: 50%;
+					transition: 1s;
+
+				}
+			}
+
+			// .pink-deck:hover {
+			// 	transform: scale(1.3,1.3);
+			// 	transition: 2s;
+			// }
+		}
+
+		.selected{
+			transform: scale(1.5);
+		}
+} //all boards 
+
+	
 
 	 .btn {
 	 	padding: 15px;
@@ -61,6 +94,11 @@
 	    width: 30%;
 	    align-self: flex-end;
 	    margin-top: 80%;
+	    @media screen and (min-width: 728px){
+	    	margin-top: 20%;
+	    	width: 10%;
+	    	margin-right: 15%;
+	    }
 
 	} 
 

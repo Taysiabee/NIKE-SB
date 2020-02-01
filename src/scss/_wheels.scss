@@ -5,6 +5,10 @@
 		flex-direction: row;
 	}
 	
+	.selected{
+		transform: scale(1.5);
+	}
+
 	ul{
 		display: flex;
 		margin-top: 10%;
@@ -18,17 +22,38 @@
 		}
 	}
 
+
 	.purple-wheel{
 		width: 60%;
+		transition: .5s;
+		@media screen and (min-width: 728px){
+			transition: .5s;
+			width: 60%;
+		}
 	}
+
+
 
 	.pink-wheel{
 		width: 60%;
+		transition: .5s;
+		@media screen and (min-width: 728px){
+			transition: .5s;
+			width: 60%;
+		}
 	}
 
 	.brown-wheel{
 		width: 60%;
+		transition: .5s;
+		@media screen and (min-width: 728px){
+			transition: .5s;
+		}
 	}
+
+
+	
+
 
 	.btn {
 	 	padding: 15px;

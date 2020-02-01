@@ -26,6 +26,15 @@
 	justify-content: space-around;
 	margin-right: 3%;
 
+	.not-allowed{ 
+		cursor: not-allowed; 
+	}
+
+	nav{
+		@media screen and (min-width: 728px){
+			margin-top: -3%;
+		}
+	}
 
 	ul {
 		display: none;
@@ -48,6 +57,10 @@
 		width: 25%;
 		margin: auto;
 		display: block;	
+		@media screen and (min-width: 728px){
+			width: 15%;
+			margin-top: 0%;
+		}
 	}
 
 	.ham{
@@ -60,6 +73,10 @@
 	.cart-icon{
 		width: 7%;
 		height: 7%;
+		@media screen and (min-width: 728px){
+			width: 4%;
+			height: 4%;
+		}
 
 	}
 
@@ -67,6 +84,10 @@
 		width: 4%;
 		height: 4%;
 		margin-left: 2%;
+		@media screen and (min-width: 728px){
+			width: 3%;
+			height: 3%;
+		}
 	}
 
 
@@ -115,7 +136,8 @@
 		margin-top: 10%;
 
 		@media screen and (min-width: 1024px){
-			font-size: 1.5em;
+			font-size: 2em;
+			margin-top: 4%;
 		}
 
 		span{
@@ -130,10 +152,13 @@
 
 	h2{
 		font-size: 1.5em;
-		margin-top: 10%;
+		margin-top: 5%;
 		margin-bottom: 10%;
 		color: #707070;
 		text-transform: uppercase;
+		@media screen and (min-width: 1024px){
+			margin-top: 0%;
+		}
 	}	
 }
 
@@ -149,6 +174,9 @@ footer{
 	padding: 20px;
 	margin-top: 60px;
 	text-transform: uppercase;
+	@media screen and (min-width: 728px){
+		margin-top: 15%;
+	}
 
 	p{
 		@media screen and (min-width: 728px){
@@ -160,7 +188,9 @@ footer{
 		width: 30%;
 		margin-left: 35%;
 		@media screen and (min-width: 728px){
-			width: 25%;
+			width: 15%;
+			margin-left: 0%;
+			margin-bottom:5%;
 		}
 	}
 }

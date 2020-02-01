@@ -72,9 +72,23 @@ body{
 	.money-info{
 		margin-top: 10%;
 		color: #4FB6BF;
+		display: flex;
+		flex-direction: column;
+		
+	.cost-item-container{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+			}
+		
 		@media screen and (min-width: 728px){
 			margin-top: 0%;
 			margin-right: 10%;
+			width: 400px;
+			
+
+
 		}
 			h3{
 			font-weight: bold;
@@ -89,7 +103,7 @@ body{
 
 			}
 			span{
-				float: right;
+				float: right; 
 				@media screen and (min-width: 728px){
 					margin-top: 2%;
 				}
