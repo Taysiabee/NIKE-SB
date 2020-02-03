@@ -22,6 +22,12 @@ brownDeck.addEventListener('click', function(event){
 		brownDeck.classList.add("selected");
 		blueDeck.classList.remove("selected");
 		pinkDeck.classList.remove("selected");
+		var deck = getParameterByName('deck');
+		if (deck === "brown") {
+	deckImage.src = "dist/img/blue-deck-purp-wheels.png";
+
+}
+
 })
 
 pinkDeck.addEventListener('click', function(event){
@@ -40,15 +46,17 @@ let brownWheel = document.querySelector(".brown-wheel");
 
 
 if (purpleWheel && pinkWheel && brownWheel) {
+	var deck = getParameterByName('deck');
+	let deckImage  = document.querySelector(".brown-deck-purp-wheels")
+if (deck === "brown") {
+	deckImage.src = "dist/img/brown-deck-wheels.png";
 	
+}
+
 purpleWheel.addEventListener('click', function(event){
 		purpleWheel.classList.add("selected");
 		pinkWheel.classList.remove("selected");
 		brownWheel.classList.remove("selected");
-		if (deck === "blue") {
-	deckImage.src = "dist/img/blue-deck-purp-wheels.png";
-
-}
 })
 
 
@@ -62,10 +70,8 @@ brownWheel.addEventListener('click', function(event){
 		brownWheel.classList.add("selected");
 		pinkWheel.classList.remove("selected");
 		purpleWheel.classList.remove("selected");
-		if (deck === "brown") {
-	deckImage.src = "dist/img/brown-deck-wheels.png";
 
-}
+		
 })
 
 }
@@ -80,11 +86,11 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-var deck = getParameterByName('deck');
 
-if ("brown") {
-  document.querySelector('wrapper-wheels').innerHTML += '<img src="images/brown'+deck+'.png"/>';
-}
+
+// if ("brown") {
+//   document.querySelector('wrapper-wheels').deckImage.src
+// }
 
 
 
