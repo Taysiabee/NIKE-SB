@@ -49,6 +49,7 @@
 		li{
 			@media screen and (min-width: 728px){
 				margin-right: 15%;
+				font-size: 1.5em;
 			}
 		}
 	}
@@ -98,21 +99,15 @@
 	background-color: #2B2B2B;
 
 		.entry-button{
-		    background-color: #4EB6BF;
-		    width: 50%;
-		    font-size: 18px;
-		    border-radius: 32px;
-		    position: absolute;		    
-		    top: 40%;
-		    left: 25%;
-		    height: 9%;
-
-		    .sb-entry{
-		    	width: 40%;
-			    position: absolute;
-			    left: 33%;
-			    bottom: 5%;;
-		    }
+			background-color: #4EB6BF;
+			width: 23%;
+			font-size: 18px;
+			border-radius: 51px;
+			position: absolute;
+			top: 40%;
+			left: 37%;
+			height: 11%;
+			font-size: 1.7em;
 		}
 }
 
