@@ -4,38 +4,37 @@ let nextBtn = document.querySelector(".btn");
 let blueDeck = document.querySelector(".blue-deck");
 let brownDeck = document.querySelector(".brown-deck");
 let pinkDeck = document.querySelector(".pink-deck");
-let deckImage = document.querySelector("src")
-let brownDww = document.querySelector(".brown-deck-wheels")
 
 
 
 if (blueDeck && brownDeck && pinkDeck) {
-blueDeck.addEventListener('click', function(event){
-	nextBtn.href = "wheels.html?deck=blue";
-		blueDeck.classList.add("selected");
-		brownDeck.classList.remove("selected");
-		pinkDeck.classList.remove("selected");
-})
+	
+	blueDeck.addEventListener('click', function(event){
+		nextBtn.href = "wheels.html?deck=blue";
+			blueDeck.classList.add("selected");
+			brownDeck.classList.remove("selected");
+			pinkDeck.classList.remove("selected");
+	})
 
-brownDeck.addEventListener('click', function(event){
-	nextBtn.href = "wheels.html?deck=brown";
-		brownDeck.classList.add("selected");
-		blueDeck.classList.remove("selected");
-		pinkDeck.classList.remove("selected");
-		var deck = getParameterByName('deck');
-		if (deck === "brown") {
-	deckImage.src = "dist/img/blue-deck-purp-wheels.png";
+	brownDeck.addEventListener('click', function(event){
+		nextBtn.href = "wheels.html?deck=brown";
+			brownDeck.classList.add("selected");
+			blueDeck.classList.remove("selected");
+			pinkDeck.classList.remove("selected");
+			var deck = getParameterByName('deck');
+			if (deck === "brown") {
+		deckImage.src = "dist/img/blue-deck-purp-wheels.png";
 
-}
+	}
 
-})
+	})
 
-pinkDeck.addEventListener('click', function(event){
-	nextBtn.href = "wheels.html?deck=pink";
-		pinkDeck.classList.add("selected");
-		blueDeck.classList.remove("selected");
-		brownDeck.classList.remove("selected");
-})
+	pinkDeck.addEventListener('click', function(event){
+		nextBtn.href = "wheels.html?deck=pink";
+			pinkDeck.classList.add("selected");
+			blueDeck.classList.remove("selected");
+			brownDeck.classList.remove("selected");
+	})
 
 }
 
@@ -45,36 +44,46 @@ let pinkWheel = document.querySelector(".pink-wheel");
 let brownWheel = document.querySelector(".brown-wheel");
 
 
+
+//wheels page
 if (purpleWheel && pinkWheel && brownWheel) {
 	var deck = getParameterByName('deck');
-	let deckImage  = document.querySelector(".brown-deck-purp-wheels")
-if (deck === "brown") {
-	deckImage.src = "dist/img/brown-deck-wheels.png";
+	console.log(deck);
 	
-}
+	let deckImage  = document.querySelector("#deck-for-wheels");
+	console.log(deckImage);
 
-purpleWheel.addEventListener('click', function(event){
+	if (deck === "brown") {
+		deckImage.src = "dist/img/brown-deck-wheels.png";
+	}else if (deck === "blue"){
+		deckImage.src = "dist/img/blue-deck-brown-wheels.png";
+	}else if (deck === "pink"){
+		deckImage.src = "dist/img/pink-deck-brown-wheels.png";
+}
+	
+	purpleWheel.addEventListener('click', function(event){
+		purpleWheel.href = "wheels-purple.html?deck=blue";
 		purpleWheel.classList.add("selected");
 		pinkWheel.classList.remove("selected");
 		brownWheel.classList.remove("selected");
-})
+	})
 
 
-pinkWheel.addEventListener('click', function(event){
+	pinkWheel.addEventListener('click', function(event){
 		pinkWheel.classList.add("selected");
 		purpleWheel.classList.remove("selected");
 		brownWheel.classList.remove("selected");
-})
+	})
 
-brownWheel.addEventListener('click', function(event){
+	brownWheel.addEventListener('click', function(event){
 		brownWheel.classList.add("selected");
 		pinkWheel.classList.remove("selected");
 		purpleWheel.classList.remove("selected");
 
-		
-})
+			
+	})
 
-}
+}//wheels page
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;

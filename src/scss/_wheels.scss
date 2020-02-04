@@ -14,10 +14,10 @@
 		margin-top: 10%;
 
 	}
-	.brown-deck-wheels{
+	#deck-for-wheels{
 		width: 120%;
 		@media screen and (min-width: 728px){
-			width: 50%;
+			width: 30%;
 			transform: rotate(345deg);
 		}
 	}
