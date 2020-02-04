@@ -62,10 +62,21 @@ if (purpleWheel && pinkWheel && brownWheel) {
 }
 	
 	purpleWheel.addEventListener('click', function(event){
-		purpleWheel.href = "wheels-purple.html?deck=blue";
+		purpleWheel.href = "wheels.html?deck=blue";
 		purpleWheel.classList.add("selected");
 		pinkWheel.classList.remove("selected");
 		brownWheel.classList.remove("selected");
+
+		if  (deck == "blue"){
+			deckImage.src = "dist/img/blue-deck-purp-wheels.png";
+		}else if (deck =="brown"){
+			deckImage.src = "dist/img/brown-deck-purp-wheels.png";
+		}else if (deck = "pink"){
+
+			deckImage.src = "dist/img/pink-deck-purp-wheels.png";
+		}
+		
+
 	})
 
 
@@ -73,6 +84,17 @@ if (purpleWheel && pinkWheel && brownWheel) {
 		pinkWheel.classList.add("selected");
 		purpleWheel.classList.remove("selected");
 		brownWheel.classList.remove("selected");
+	
+		if  (deck == "blue"){
+			deckImage.src = "dist/img/blue-deck-pink-wheels.png";
+		}else if (deck =="brown"){
+			deckImage.src = "dist/img/brown-deck-pink-wheels.png";
+		}else if (deck = "pink"){
+			deckImage.src = "dist/img/pink-deck-pink-wheels.png";
+		}
+		
+
+
 	})
 
 	brownWheel.addEventListener('click', function(event){
@@ -80,6 +102,13 @@ if (purpleWheel && pinkWheel && brownWheel) {
 		pinkWheel.classList.remove("selected");
 		purpleWheel.classList.remove("selected");
 
+		if  (deck == "blue"){
+			deckImage.src = "dist/img/blue-deck-brown-wheels.png";
+		}else if (deck =="brown"){
+			deckImage.src = "dist/img/brown-deck-brown-wheels.png";
+		}else if (deck = "pink"){
+			deckImage.src = "dist/img/pink-deck-brown-wheels.png";
+		}
 			
 	})
 
