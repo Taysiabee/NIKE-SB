@@ -1,6 +1,4 @@
 let nextBtn = document.querySelector(".btn");
-
-
 let blueDeck = document.querySelector(".blue-deck");
 let brownDeck = document.querySelector(".brown-deck");
 let pinkDeck = document.querySelector(".pink-deck");
@@ -22,10 +20,6 @@ if (blueDeck && brownDeck && pinkDeck) {
 			blueDeck.classList.remove("selected");
 			pinkDeck.classList.remove("selected");
 			var deck = getParameterByName('deck');
-			if (deck === "brown") {
-		deckImage.src = "dist/img/blue-deck-purp-wheels.png";
-
-	}
 
 	})
 
@@ -36,7 +30,7 @@ if (blueDeck && brownDeck && pinkDeck) {
 			brownDeck.classList.remove("selected");
 	})
 
-}
+}  //deck page
 
 
 let purpleWheel = document.querySelector(".purple-wheel");
@@ -47,19 +41,18 @@ let brownWheel = document.querySelector(".brown-wheel");
 
 //wheels page
 if (purpleWheel && pinkWheel && brownWheel) {
-	var deck = getParameterByName('deck');
-	console.log(deck);
 	
+	var deck = getParameterByName('deck');
 	let deckImage  = document.querySelector("#deck-for-wheels");
-	console.log(deckImage);
 
-	if (deck === "brown") {
-		deckImage.src = "dist/img/brown-deck-wheels.png";
-	}else if (deck === "blue"){
-		deckImage.src = "dist/img/blue-deck-brown-wheels.png";
-	}else if (deck === "pink"){
-		deckImage.src = "dist/img/pink-deck-brown-wheels.png";
-}
+
+// 	if (deck === "brown") {
+// 		deckImage.src = "dist/img/brown-deck-wheels.png";
+// 	}else if (deck === "blue"){
+// 		deckImage.src = "dist/img/blue-deck-brown-wheels.png";
+// 	}else if (deck === "pink"){
+// 		deckImage.src = "dist/img/pink-deck-brown-wheels.png";
+// }
 	
 	purpleWheel.addEventListener('click', function(event){
 		purpleWheel.href = "wheels.html?deck=blue";
@@ -113,6 +106,19 @@ if (purpleWheel && pinkWheel && brownWheel) {
 	})
 
 }//wheels page
+
+let videoName = "movie" + document.querySelector("deck") + "_wheels_" + document.querySelector("wheels") + ".mp4";
+let reviewBtn = document.querySelector(".btn-review");
+reviewBtn.href = "gallery.html?deck=brown-deck-purple-wheels"
+	
+	// if (deck == "brown")
+
+
+
+// let videoName = document.querySelector (".video")
+// if (deck = "brown"){
+// 	videoName.src = "dist/video/brown-deck-purple-wheels.mp4"
+// }
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
