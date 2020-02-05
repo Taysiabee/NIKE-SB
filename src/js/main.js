@@ -106,12 +106,9 @@ if (purpleWheel && pinkWheel && brownWheel) {
 
 }//wheels page
 
-let videoName = "video" + document.querySelector("deck") + "_wheels_" + document.querySelector("wheels") + ".mp4";
-let reviewBtn = document.querySelector(".btn-review");
+let videoName = "video" + ("brow") + "_wheels_" + getQueryVariable("wheels") + ".mp4";
+
 // reviewBtn.href = "gallery.html?deck=brown";
-	
-	if (deck == "dist/img/brown-deck-purple-wheels.png")
-		videoName.src = "dist/video/brown-deck-purple-wheels.mp4"
 
 
 
