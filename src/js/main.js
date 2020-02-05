@@ -46,16 +46,15 @@ if (purpleWheel && pinkWheel && brownWheel) {
 	let deckImage  = document.querySelector("#deck-for-wheels");
 
 
-// 	if (deck === "brown") {
-// 		deckImage.src = "dist/img/brown-deck-wheels.png";
-// 	}else if (deck === "blue"){
-// 		deckImage.src = "dist/img/blue-deck-brown-wheels.png";
-// 	}else if (deck === "pink"){
-// 		deckImage.src = "dist/img/pink-deck-brown-wheels.png";
-// }
+	if (deck === "brown") {
+		deckImage.src = "dist/img/brown-deck-wheels.png";
+	}else if (deck === "blue"){
+		deckImage.src = "dist/img/blue-deck-brown-wheels.png";
+	}else if (deck === "pink"){
+		deckImage.src = "dist/img/pink-deck-brown-wheels.png";
+}
 	
 	purpleWheel.addEventListener('click', function(event){
-		purpleWheel.href = "wheels.html?deck=blue";
 		purpleWheel.classList.add("selected");
 		pinkWheel.classList.remove("selected");
 		brownWheel.classList.remove("selected");
@@ -107,11 +106,12 @@ if (purpleWheel && pinkWheel && brownWheel) {
 
 }//wheels page
 
-let videoName = "movie" + document.querySelector("deck") + "_wheels_" + document.querySelector("wheels") + ".mp4";
+let videoName = "video" + document.querySelector("deck") + "_wheels_" + document.querySelector("wheels") + ".mp4";
 let reviewBtn = document.querySelector(".btn-review");
-reviewBtn.href = "gallery.html?deck=brown-deck-purple-wheels"
+// reviewBtn.href = "gallery.html?deck=brown";
 	
-	// if (deck == "brown")
+	if (deck == "dist/img/brown-deck-purple-wheels.png")
+		videoName.src = "dist/video/brown-deck-purple-wheels.mp4"
 
 
 

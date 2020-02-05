@@ -126,7 +126,7 @@ body{
 
 		.btn{
 			padding: 15px;
-		    border-radius: 10px;
+		    border-radius: 25px;
 		    color: white;
 		    background-color: #4EB6BF;
 		    font-weight: bold;
@@ -137,6 +137,7 @@ body{
 		    margin-top: 10%;
 		    @media screen and (min-width: 728px){
 		    	margin-top: 10%;
+		    	width: 65%;
 		    }
 		}
 	}   //money-info
